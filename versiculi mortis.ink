@@ -1,6 +1,6 @@
 // --- VARIABLES GLOBALES ---
 VAR maldad = 0
-VAR ruta_nigromante = false // false = rechaza el poder, true = acepta la curiosidad
+VAR ruta_nigromante = false 
 
 // --- INICIO ---
 -> escena_1
