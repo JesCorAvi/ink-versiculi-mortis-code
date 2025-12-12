@@ -54,9 +54,7 @@ Los usuarios de estos poderes deben esconderse de la Inquisición. La ignorancia
 // ESCENA 1: EL PRÓLOGO
 // ==========================================
 === escena_1 ===
---------------------------------------------------
-      CAPÍTULO I: LA MONEDA AL AIRE
---------------------------------------------------
+:: PRÓLOGO: Entre la vida y la muerte
 
 Una voz surge de la nada, antigua y cargada de una extraña familiaridad, como si te hablara directamente al alma.
 
@@ -84,9 +82,7 @@ Hubo una pausa, densa y reflexiva.
 // ESCENA 2: LA ESCUELA Y LORENZO
 // ==========================================
 === escena_2 ===
---------------------------------------------------
-      CAPÍTULO II: DÍAS DE LUZ
---------------------------------------------------
+:: CAPÍTULO II: Días de luz
 
 —Muy bien. Entonces, dejemos de hablar de abstracciones y observemos la realidad.
 
@@ -184,9 +180,7 @@ Y así, entre risas y lecciones de historia, los hermanos dieron un paseo hasta 
 // ESCENA 3: EL PARQUE Y EL PÁJARO
 // ==========================================
 === escena_3 ===
---------------------------------------------------
-      CAPÍTULO III: LA PRIMERA GRIETA
---------------------------------------------------
+:: CAPÍTULO III: La primera grieta
 
 El camino a casa siempre se hacía corto con Lorenzo. Al llegar cerca de la plaza, un grupo de niños saludó a lo lejos.
 
@@ -280,9 +274,9 @@ Emma estaba segura de lo que había visto, pero la racionalidad de sus amigos ch
 // ESCENA 4: EL CUMPLEAÑOS
 // ==========================================
 === escena_4 ===
---------------------------------------------------
-      CAPÍTULO IV: DESEOS Y SOMBRAS
---------------------------------------------------
+
+:: CAPÍTULO IV: Deseos y sombras
+
 
 Habían pasado cinco meses desde la tarde en el parque. Cinco meses desde que un gorrión muerto se movió contra la voluntad de la naturaleza. Emma había pasado ese tiempo siendo la niña perfecta.
 
@@ -344,9 +338,7 @@ Por primera vez en meses, el frío en las manos de Emma se disipó un poco. Se s
 // ESCENA 5: EL ASALTO
 // ==========================================
 === escena_5 ===
---------------------------------------------------
-      CAPÍTULO V: CRISTALES ROTOS
---------------------------------------------------
+:: CAPÍTULO V: Cristales rotos
 
 La risa de Emma se congeló en su garganta al escuchar golpes en la puerta principal. El sonido no era el de un vecino amistoso; era autoritario, seco y frío.
 
@@ -426,9 +418,9 @@ El terror le robó el aire. Emma cerró los ojos y, vencida por el pánico y el 
 // ESCENA 6: EL DESPERTAR Y LA PÉRDIDA
 // ==========================================
 === escena_6 ===
---------------------------------------------------
-      CAPÍTULO VI: EL SILENCIO
---------------------------------------------------
+
+:: CAPÍTULO VI: El silencio
+
 
 Al despertar, todo estaba oscuro y en silencio.
 
@@ -480,9 +472,8 @@ Suplicó por una respuesta que la consolara. Pero esa respuesta no llegó.
 // ESCENA 7: LA PROMESA
 // ==========================================
 === escena_7 ===
---------------------------------------------------
-      CAPÍTULO VII: LA ÚLTIMA PROMESA
---------------------------------------------------
+
+:: CAPÍTULO VII: La última promesa
 
 La noche dio paso a una mañana gris, pero no para Emma. Los guardias investigaron la casa y concluyeron rápidamente que había sido un asalto violento que salió mal.
 
@@ -525,9 +516,7 @@ Lorenzo apretó débilmente su mano.
 // ==========================================
 === escena_8 ===
 
---------------------------------------------------
-      CAPÍTULO VIII: EL LEGADO
---------------------------------------------------
+:: CAPÍTULO VIII: El legado
 
 Tras el entierro, Emma pidió que la llevaran a casa. Necesitaba estar allí una última vez. Subió las escaleras buscando respuestas entre los escombros de su vida. Entró al despacho de su padre. Estaba aún más destrozado que el resto de la casa.
 
@@ -595,9 +584,9 @@ La idea era tabú, una herejía contra el Imperio y la naturaleza. Pero entonces
 // ESCENA 9: EL REGRESO DE LOS ASESINOS
 // ==========================================
 === escena_9 ===
---------------------------------------------------
-      CAPÍTULO IX: LA MÁSCARA SE ROMPE
---------------------------------------------------
+
+:: CAPÍTULO IX: El Eco del pasado
+
 
 Un año después. El tiempo pasó lento y pesado. Emma aprendió a ponerse una máscara. Ante el pueblo, era la pobre huérfana que reparaba su hogar poco a poco. Pero bajo el suelo, en el sótano, Emma experimentaba con la muerte.
 
@@ -736,9 +725,9 @@ Los hombres desenfundaron armas. Emma sentía la magia quemándole las venas. El
 // ==========================================
 
 === final_superviviente ===
---------------------------------------------------
-      EPÍLOGO: LA LUZ DE LOS BIANCHI
---------------------------------------------------
+
+:: EPÍLOGO: La Luz de los Bianchi
+
 Emma sostuvo el "Versiculi Mortis" entre sus manos temblorosas. La tentación era física; le quemaba en las yemas de los dedos, prometiendo imposibles.
 
 "Podría traerlos... Podría escuchar la risa de mamá una vez más. Podría pedirle perdón a papá".
@@ -783,9 +772,9 @@ Y así, la "pequeña luz" de los Bianchi siguió brillando, no con el fuego de l
 -> END
 
 === final_malo ===
---------------------------------------------------
-      EPÍLOGO: EL SILENCIO ETERNO
---------------------------------------------------
+
+:: EPÍLOGO: El silencio eterno
+
 
 
 Emma intentó levantarse, apoyando las manos en el suelo. Sus dedos resbalaron. El parqué estaba húmedo y caliente bajo sus palmas. Al mirar abajo, vio cómo su sangre se mezclaba con las viejas manchas oscuras que nunca había podido limpiar del todo: la sangre de sus padres.
@@ -806,9 +795,9 @@ GAME OVER
 -> END
 
 === final_verdadero ===
---------------------------------------------------
-      EPÍLOGO: EL NACIMIENTO DEL MONSTRUO
---------------------------------------------------
+
+:: EPÍLOGO: EL nacimiento nacimiento de la oscuridad
+
 Emma aceptó el trato. Abandonó Caliardo bajo el manto de la noche, siguiendo los pasos del caballero Balthassar. Se adentró en un mundo de sombras y secretos olvidados.
 
 La niña murió esa noche, pero algo nuevo nació. Algo poderoso y terrible. La búsqueda para recuperar a su familia acababa de comenzar, y Gaïa temblaría antes de que ella terminara.
@@ -818,6 +807,6 @@ La historia a partir de aqui esta inacabada. FIN DE LA DEMO. Gracias por jugar.
 === creditos ===
 # CLEAR
 Historia y diseño por [Jesús Cordero Ávila-JesCorAvi](jescoravi.itch.io/)
-Se ha hecho uso del template [Remy-vim's Ink Template](remy-vim.itch.io/ink-template) pasa Ink
+Se ha hecho uso del template [Remy-vim's Ink Template](remy-vim.itch.io/ink-template) para Ink
 
 + [Volver] -> menu_principal
