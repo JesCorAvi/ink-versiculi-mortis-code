@@ -3,8 +3,24 @@ VAR maldad = 0
 VAR ruta_nigromante = false
 
 // --- INICIO ---
--> menu_inicio
+// 1. CAMBIA ESTO: En lugar de ir a menu_inicio, vamos al menu_principal
+-> menu_principal 
 
+// 2. INSERTA AQUÍ TU NUEVO MENÚ PRINCIPAL
+=== menu_principal ===
+# CLEAR
+// # IMAGE: portada.jpg 
+
+: VERSICULI MORTIS
+
++ [Comenzar Historia]
+    // Aquí conectamos con lo que ya tenías antes
+    -> menu_inicio 
+
++ [Créditos]
+    -> creditos
+
+// 3. AQUÍ SIGUE TU CÓDIGO ORIGINAL (NO LO BORRES)
 // ==========================================
 // MENÚ DE CONTEXTO
 // ==========================================
@@ -799,3 +815,9 @@ La niña murió esa noche, pero algo nuevo nació. Algo poderoso y terrible. La 
 
 La historia a partir de aqui esta inacabada. FIN DE LA DEMO. Gracias por jugar.
 -> END
+=== creditos ===
+# CLEAR
+Historia y diseño por [Jesús Cordero Ávila-JesCorAvi](jescoravi.itch.io/)
+Se ha hecho uso del template [Remy-vim's Ink Template](remy-vim.itch.io/ink-template) pasa Ink
+
++ [Volver] -> menu_principal
