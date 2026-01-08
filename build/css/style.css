@@ -159,14 +159,15 @@
   --color-text-secondary: #444;
   --color-text-tertiary: #aaa;
   --color-text-strong: black;
-  --color-accent-primary: #b97c2c;
-  --color-accent-dark: #4f3411;
-  --color-accent-warning: #cc8f1a;
+  /* CAMBIOS A VERDE - TEMA CLARO */
+  --color-accent-primary: #2E7D32;
+  --color-accent-dark: #1B5E20;
+  --color-accent-warning: #827717;
   --color-border-light: #eee;
   --color-border-medium: #ccc;
   --color-disabled: #ccc;
-  --color-hover-bg: rgba(185, 124, 44, 0.1);
-  --color-highlight: yellow;
+  --color-hover-bg: rgba(46, 125, 50, 0.1);
+  --color-highlight: #dcedc8;
   --color-important: #e74c3c;
   --color-quiet: #7f8c8d;
   --color-code-bg: #222;
@@ -248,13 +249,14 @@ body.dark {
   --color-text-secondary: #888;
   --color-text-tertiary: #666;
   --color-text-strong: white;
-  --color-accent-primary: #cc8f1a;
-  --color-accent-dark: #c4af87;
-  --color-accent-warning: #cc8f1a;
+  /* CAMBIOS A VERDE - TEMA OSCURO */
+  --color-accent-primary: #66BB6A;
+  --color-accent-dark: #81C784;
+  --color-accent-warning: #AED581;
   --color-border-light: #333;
   --color-border-medium: #444;
   --color-disabled: #444;
-  --color-hover-bg: rgba(204, 143, 26, 0.1);
+  --color-hover-bg: rgba(102, 187, 106, 0.1);
   /* --color-code-bg: #2d3748; */
   --color-code-bg: #ddd;
   --color-blockquote-bg: #2d3748;
@@ -1101,7 +1103,7 @@ h4 {
    RESPONSIVE MODAL STYLES
    ============================================================================= */
 
-  @media screen and (max-width: 680px) {
+@media screen and (max-width: 680px) {
     .base-modal-content {
       width: 95%;
       max-width: none;
@@ -1125,26 +1127,26 @@ h4 {
       margin-left: 0;
       width: 100%;
     }
-  }
 
-  .save-slot-content {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-  }
+    /* Estas reglas ahora están DENTRO de la media query, como deben estar */
+    .save-slot-content {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
 
-  .save-slot-actions {
-    margin-left: 0;
-    width: 100%;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-  }
+    .save-slot-actions {
+      margin-left: 0;
+      width: 100%;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+    }
 
-  .save-action-button {
-    font-size: 0.7rem;
-    padding: 0.3rem 0.6rem;
+    .save-action-button {
+      font-size: 0.7rem;
+      padding: 0.3rem 0.6rem;
+    }
   }
-}
 
 /* =============================================================================
    NOTIFICATION SYSTEM
@@ -1365,4 +1367,3 @@ h4 {
 #pages-menu-btn.active {
   background-color: var(--color-hover-bg);
 }
-
