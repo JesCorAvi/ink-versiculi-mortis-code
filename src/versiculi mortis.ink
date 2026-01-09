@@ -44,9 +44,9 @@ La historia humana fue purgada de las grandes épocas de magia y ciencia, dejand
 
 Los supervivientes, aterrorizados, se aferraron a la fe de un gran Imperio, el cual institucionalizó la ignorancia al declarar que todo lo oculto era una abominable herejía. A pesar de la estricta prohibición religiosa, el mundo está impregnado de habilidades extraordinarias que se manifiestan de tres formas principales, todas ellas consideradas herejías:
 
-1. <b>Manipulación de la Realidad por Conocimiento:</b> Artes complejas basadas en principios arcanos que remodelan la realidad mediante conjuros.
-2. <b>Control de la Energía Vital:</b> La canalización de la fuerza interior para lograr proezas marciales sobrehumanas.
-3. <b>Poderes de la Mente:</b> La capacidad de proyectar la voluntad o invocar entidades de planos dimensionales.
+1. __Manipulación de la Realidad por Conocimiento:__ Artes complejas basadas en principios arcanos que remodelan la realidad mediante conjuros.
+2. __Control de la Energía Vital:__ La canalización de la fuerza interior para lograr proezas marciales sobrehumanas.
+3. __Poderes de la Mente:__ La capacidad de proyectar la voluntad o invocar entidades de planos dimensionales.
 
 Los usuarios de estos poderes deben esconderse de la Inquisición. La ignorancia también se sostiene gracias a la Barrera, un velo que separa la realidad. Sin embargo, en las sombras de Gaïa, diversas criaturas místicas aún persisten.
 
@@ -320,6 +320,7 @@ Emma abrió la caja. Dentro había un colgante sencillo: una piedra de río lisa
 
 // AÑADIMOS EL OBJETO AL INVENTARIO
 ~ inventario += colgante_lorenzo
+<div class="item-msg ganado">Has obtenido el Colgante de Lorenzo, puedes verlo en tu inventario.</div>
 
 —Es... ¿una piedra?
 
@@ -523,6 +524,7 @@ La abrió. Dentro había un libro encuadernado en piel oscura.
 
 // AÑADIMOS EL OBJETO AL INVENTARIO
 ~ inventario += libro_versiculi
+<div class="item-msg ganado">Has obtenido el libro Versiculi Mortis, puedes verlo en tu inventario.</div>
 
 —¿"Versiculi Mortis"? Un manuscrito antiguo.
 
@@ -540,6 +542,7 @@ La cordura de Emma pendía de un hilo. Pensó que lo mínimo que podía hacer er
 }
 
 = ruta_rechazo
+
 Emma leyó las instrucciones, los rituales, las blasfemias escritas en tinta roja.
 —Esto es... repugnante. Es una locura.
 
@@ -548,6 +551,8 @@ Su mente lógica, entrenada en la historia y la ciencia, rechazó lo que leía. 
 "Lorenzo tenía razón", pensó. "Tengo que vivir. No puedo perderme en esta oscuridad".
 
 Emma cerró la caja y guardó el libro para esconderlo donde nadie más pudiera encontrarlo jamás, en lo más profundo de las ruinas. Decidió honrar a su familia viviendo la vida normal que ellos deseaban para ella, lejos de esa locura.
+~ inventario -= libro_versiculi
+<div class="item-msg perdido">Has perdido el libro Versiculi Mortis.</div>
 -> final_superviviente
 
 = ruta_aceptacion
@@ -590,6 +595,7 @@ La idea era tabú, una herejía contra el Imperio y la naturaleza. Pero entonces
     
     ** [Vender el colgante]
         ~ inventario -= colgante_lorenzo
+        <div class="item-msg perdido">Has perdido el Colgante de Lorenzo.</div>
         
         Emma se arrancó el colgante del cuello antes de que pudiera arrepentirse. Caminó bajo la lluvia hasta la tienda de Marcus. El prestamista tomó el colgante y lo sopesó con escepticismo, sacando una pequeña lupa de joyero.
         
@@ -607,7 +613,7 @@ La idea era tabú, una herejía contra el Imperio y la naturaleza. Pero entonces
         -> escena_9
 
     ** [Conservar el colgante y buscar otra forma]
-        ~ inventario += colgante_lorenzo 
+        
         
         —No —dijo Emma, aferrando la piedra con fuerza—. No puedo perder esto también.
         
@@ -886,7 +892,7 @@ Se ha hecho uso del template [Remy-vim's Ink Template](remy-vim.itch.io/ink-temp
 
 // Muestra el Colgante si lo tienes
 { inventario ? colgante_lorenzo:
-    > **Colgante de Piedra**
+    > __Colgante de Piedra__
     Una piedra de río lisa con un símbolo tosco grabado.
     El último regalo de Lorenzo. 
     <i>"Para que los monstruos sepan que eres la hermana de Lorenzo".</i>
@@ -894,7 +900,7 @@ Se ha hecho uso del template [Remy-vim's Ink Template](remy-vim.itch.io/ink-temp
 
 // Muestra el Libro si lo tienes
 { inventario ? libro_versiculi:
-    > **Versiculi Mortis**
+    > __Versiculi Mortis__
     Un tomo encuadernado en piel oscura.
     Las páginas parecen calientes al tacto.
     <i>Contiene rituales que desafían el orden natural de la vida y la muerte.</i>

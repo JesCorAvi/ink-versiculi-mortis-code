@@ -1363,7 +1363,29 @@ h4 {
   color: var(--color-text-strong);
 }
 
-/* Active menu button styling */
 #pages-menu-btn.active {
   background-color: var(--color-hover-bg);
+}
+
+.item-msg {
+    display: block;             
+    padding: 10px 15px;         
+    margin: 15px 0;             
+    border-radius: 4px;         
+    border-left: 6px solid;     
+    font-family: sans-serif;    
+    font-size: 0.9em;           
+    font-weight: bold;
+}
+
+.item-msg.ganado {
+    background-color: #ecfdf5;  
+    border-color: #059669;      
+    color: #065f46;            
+}
+
+.item-msg.perdido {
+    background-color: #fef2f2;  
+    border-color: #dc2626;      
+    color: #991b1b;             
 }
