@@ -660,19 +660,75 @@ Pero entonces, la voz de Lorenzo resonó en su cabeza: "Preocuparte por lo que p
     —Tenéis razón, hermano. No me rendiré. Hicisteis todo por mí. Ahora es mi turno de devolver el favor.
     Emma bajó al sótano esa misma noche. No durmió. No comió.
     
-    // --- NUEVO: LIMITACIÓN POR INVENTARIO ---
-    Los reactivos para los primeros rituales eran caros. Emma miró sus escasas pertenencias. Solo una tenía valor real.
-    ** [Vender el colgante de Lorenzo para comprar suministros]
+Emma bajó al sótano esa misma noche y preparó la lista de la compra que exigía el libro.
+    
+    Al leerla, su esperanza se transformó en hielo.
+    —Mercurio purificado, sales de Aqueronte, polvo de plata...
+    
+    No eran hierbas que pudiera recoger en el bosque. Eran materiales caros. Emma vació su hucha sobre la mesa: apenas unas monedas de cobre y pelusa.
+    
+    Buscó desesperadamente por la casa, levantando tablas del suelo y rajando cojines en busca de algún ahorro olvidado de su padre. Nada. Los saqueadores se lo habían llevado todo.
+    
+    —Necesito oro —murmuró, con las manos temblando de impotencia—. Si no empiezo los rituales antes de la próxima luna nueva, la conexión se debilitará.
+    
+    Sus ojos se posaron en su reflejo en un espejo roto. En su cuello, la piedra de Lorenzo descansaba sobre su piel.
+    
+    Era lo único de valor que le quedaba.
+    
+    Su mente luchó contra la idea. *"Es el regalo de Lorenzo"*.
+    Pero otra voz, más fría y pragmática, susurró: *"Es solo una piedra. ¿Prefieres el recuerdo de tu hermano o a tu hermano vivo?"*
+    
+    // --- OPCIONES DE SACRIFICIO ---
+    
+    ** [Vender el colgante]
         ~ inventario -= colgante_lorenzo
-        Emma lloró mientras entregaba la piedra al prestamista, pero la magia requería sacrificios.
-        -> transicion_dos_anos
-    ** [Conservar el colgante a toda costa]
-        ~ inventario += colgante_lorenzo 
-        // Nos aseguramos de que lo tenga
-        Emma apretó la piedra contra su pecho. "Esto no se toca", se prometió. Trabajó el doble fregando suelos para pagar los materiales.
+        
+        Emma se arrancó el colgante del cuello antes de que pudiera arrepentirse.
+        
+        Caminó bajo la lluvia hasta la tienda de Marcus. El prestamista tomó el colgante y lo sopesó con escepticismo, sacando una pequeña lupa de joyero.
+        
+        —Ya veo. No es granito —masculló Marcus—. Es jade de río en bruto. De calidad baja y con un tallado de aficionado que lo estropea... pero jade, al fin y al cabo.
+        
+        Emma sintió un nudo en la garganta. 
+        —¿Es suficiente para pagar lo que necesito? —preguntó con voz apagada.
+        
+        Marcus hizo un cálculo rápido.
+        —Cubrirá el mercurio y las sales. Pero ni una moneda más.
+        
+        —Trato hecho.
+        
+        El hombre barrió el colgante hacia el interior de un cajón lleno de baratijas. Emma salió de la tienda con los materiales en sus bolsillos y el cuello dolorosamente ligero. Había vendido el último recuerdo de su hermano por una untima oportunidad, y no la desperdiciaria.
+        
         -> transicion_dos_anos
 
-= transicion_dos_anos
+    ** [Conservar el colgante y buscar otra forma]
+        ~ inventario += colgante_lorenzo 
+        
+        —No —dijo Emma, aferrando la piedra con fuerza—. No puedo perder esto también.
+        
+        Guardó el colgante bajo su ropa. Si quería los materiales sin vender su alma, tendría que ganárselos con el sudor de su frente.
+        
+        A la mañana siguiente, Emma se presentó en la entrada de servicio de la Mansión Valois. La Ama de Llaves, una mujer severa con cara de pocos amigos, la miró de arriba abajo.
+        
+        —¿Tú eres la hija de los Bianchi? —preguntó con desdén—. He oído lo que pasó. Una lástima. ¿Qué quieres aquí?
+        
+        —Busco...trabajo, señora —Emma mantuvo la cabeza baja, tragándose la vergüenza—. Sé leer, escribir y llevar cuentas...
+        
+        La mujer soltó una carcajada seca.
+        —No necesito a una señorita remilgada que sepa latín. Necesito a alguien que no tenga miedo a romperse las uñas. Tengo una vacante para fregar los suelos y las letrinas. Aunque no creo que a alguien como tú le interese.
+        
+        Emma apretó los puños. Necesitaba ese trabajo si queria tener una oportunidad de volver a ser feliz. Dejó su orgullo a un lado y asintió.
+        
+        —Lo haré.
+
+        Sorprendida por la respuesta, el Ama de Llaves le respondió con un gruñido.
+
+        —Bien. Empiezas mañana a las seis de la mañana. No llegues tarde.
+
+        Durante seis meses, Emma dejó de ser la "prometedora estudiante" para convertirse en una sombra invisible que frotaba mármol hasta que sus rodillas sangraban. Lo unico que la mantenía en pie era recordar a su familia. "Por ellos", se repetía para sí misma.
+        Cada moneda que ganaba iba directa a una caja oculta bajo su cama. Fue lento, agotador y humillante, pero cuando finalmente reunió lo suficiente para los ingredientes, el colgante seguía en su cuello.
+                
+        -> transicion_dos_anos
     Dos años pasarían en esa casa marcada por la tragedia. El sótano se convertiría en un laboratorio.
     El jardín, en un cementerio profanado. Y la niña risueña, en una maestra de la muerte.
     -> escena_9
@@ -688,7 +744,7 @@ Pero entonces, la voz de Lorenzo resonó en su cabeza: "Preocuparte por lo que p
 Un año después.
 El tiempo pasó lento y pesado. Emma aprendió a ponerse una máscara.
 Ante el pueblo, era la pobre huérfana que reparaba su hogar poco a poco.
-Pero bajo el suelo, en el sótano, Emma experimentaba con la muerte.
+Pero bajo el suelo, en el sótano, Emma experimentaba con decenas de rituales considerados Taboo por el resto de la comunidad, pero ella se habia insensivizado a esto. experimentos con cadáveres de animales, luego con restos humanos que robaba del cementerio. Lo unico que mantuvo su cordura fue la esperanza de traer a su familia de vuelta.
 
 Una tarde, tocaron a la puerta.
 
@@ -703,30 +759,28 @@ Ante ella aparecieron dos hombres: Jack y Henry.
 Lamentamos molestarla —dijo Jack con una sonrisa que no llegaba a sus ojos.
 
 —¿Quiénes son ustedes?
-—Mi nombre es Jack, y este es mi socio Henry. Trabajábamos con su padre, el gran Antón Bianchi. ¿Podemos pasar?
-Emma dudó. Sus instintos gritaban peligro. Reconocía algo en sus voces, un eco de sus pesadillas.
-Pero debía mantener su "máscara de normalidad".
+—Mi nombre es Jack, y este es mi socio Henry. Trabajábamos con su padre, Antón Bianchi. ¿Podemos pasar?
+Emma dudó. Sus instintos gritaban peligro. Reconocía algo en sus voces, pero decidió seguirles el juego.
 
 —... Pasen. Les prepararé té.
 Ya en el salón, los hombres observaban todo con codicia disimulada.
 
 —Sabemos que has pasado por mucho, Emma —dijo Jack—.
 Estamos aquí porque nos preocupa algo que él tenía en su poder. Es... muy importante para nosotros.
-—Se trata de una caja. Un manuscrito —intervino Henry—. Creemos que lo trajo de su último viaje.
+—Se trata de un manuscrito —intervino Henry—. Creemos que lo trajo de su último viaje.
 Queremos asegurarnos de que esté "a salvo".
 
-—¿Una caja con un libro? No recuerdo haber visto algo así.
-Apenas he tocado las cosas de mi padre después de... el Incidente.
+—¿Un manuscrito? No recuerdo haber visto algo así.
+Apenas he tocado las cosas de mi padre después de... lo que pasó.
 
 —Lo entendemos.
 Pero ese libro es peligroso en las manos equivocadas. No debería haber llegado aquí.
-Fue un error por nuestra parte perderlo de vista. Si está contigo, estamos aquí para rectificar ese error.
+Fue un error por nuestra parte no advertir a tu padre de su peligro. Si está contigo, estamos aquí para rectificar ese error.
 Emma se detuvo en seco mientras servía el té.
 —¿Un error...? ¿Insinuáis que mi familia murió... por un error vuestro?
-—Tu padre insistió en custodiarlo —dijo Henry con impaciencia—. ¡Nosotros debimos insistir en que no se lo llevase!
-Confiamos en que nadie atacaría una casa en plena ciudad...
+—Tu padre insistió en custodiarlo —dijo Henry con impaciencia—. Visto está que fue un error confiar en él.
 
-Las palabras de Henry fueron la chispa. "Confiamos". "Error".
+Las palabras de Henry fueron la chispa. 
 La máscara de Emma se rompió en mil pedazos. No fue un robo al azar. Estos hombres eran la causa.
 Toda la energía mágica que había cultivado en el sótano comenzó a fluir de golpe.
 Los objetos pequeños de la sala empezaron a temblar. La temperatura descendió drásticamente.
@@ -746,11 +800,11 @@ El libro le había enseñado formas para defenderse, pero nunca los había usado
     -> opcion_ira
 
 // OPCIÓN B: Solo disponible SI tienes el colgante (La buena)
-* { inventario ? colgante_lorenzo } [Aferrarte al colgante y proteger el secreto]
+* { inventario ? colgante_lorenzo } [Aferrarte al colgante y tranquilizarte...]
     -> opcion_control
 
 // OPCIÓN C: Texto alternativo si NO tienes el colgante (Para que el jugador sepa por qué no puede elegir la otra)
-* { not (inventario ? colgante_lorenzo) } [Intentar calmarte... (Imposible sin tu amuleto)]
+* { not (inventario ? colgante_lorenzo) } [Intentar calmarte...]
     Buscaste en tu cuello la piedra de Lorenzo, algo a lo que aferrarte... pero no estaba. La vendiste.
     No te queda nada. Solo odio.
     -> opcion_ira
@@ -768,7 +822,7 @@ El libro le había enseñado formas para defenderse, pero nunca los había usado
     
     —¡Aaagh! ¡Mi brazo! —aulló Jack.
     Su brazo, el que sostenía la espada, comenzó a marchitarse y ennegrecerse al instante. Cayó al suelo, retorciéndose de dolor.
-    —¡Os mataré! ¡Os mataré a todos!
+    —¡Os mataré! ¡Os mataré a todos! —gritó Emma, avanzando hacia ellos con los ojos inyectados en sangre.
     
     Cegada por las lágrimas y la furia, Emma levantó la mano para rematarlo.
     Pero olvidó una lección básica: nunca pierdas de vista todo el tablero.
@@ -787,21 +841,17 @@ El libro le había enseñado formas para defenderse, pero nunca los había usado
     Emma sintió frío, el mismo frío que sintió al tocar aquel pájaro años atrás.
     Su visión se nublaba.
     
-    "Lo siento, Lorenzo...", pensó. "No pude... soportarlo más".
-    La oscuridad la engulló antes de que pudiera derramar una última lágrima.
-    
-    —¡Maldita bruja! ¡Me ha jodido el brazo!
-    —gritaba Jack—. ¡Remátala!
+    —¡Maldita bruja! ¡Me ha jodido el brazo, Remátala! —gritaba Jack—.
     
     —Ya está muerta. Vámonos. Llama a los "limpiadores".
+
     -> final_malo
 
 = opcion_control
     "No...", pensó Emma, respirando entrecortadamente. Aferró la piedra de Lorenzo con fuerza hasta que se clavó en su palma.
     "Si me descubren ahora, todo habrá sido en vano. No podré traerlos de vuelta. Tengo que calmarme. Por Lorenzo..."
     
-    Recordó las enseñanzas del libro: la magia requiere concentración, voluntad férrea.
-    Si ataco a lo loco, me matarán.
+    Recordó las enseñanzas del libro: la magia requiere concentración, voluntad férrea. Si ataco a lo loco, no tendré ninguna oportunidad.
     
     Emma apretó los dientes y, con un esfuerzo sobrehumano, contuvo la explosión de magia.
     El temblor cesó. La temperatura volvió a la normalidad.
@@ -819,36 +869,35 @@ El libro le había enseñado formas para defenderse, pero nunca los había usado
     ¡Esto es asunto oficial de...!
     
     —No lo voy a repetir una segunda vez.
-    Balthassar emanaba un aura de terror puro, una oscuridad más densa que la noche.
-    Jack y Henry, mercenarios experimentados, reconocieron a un depredador superior y decidieron no arriesgarse.
+    Aquel misterioso personaje emanaba un aura de terror puro, una oscuridad más densa que la noche.
+    Jack y Henry, mercenarios experimentados, reconocieron el peligro y decidieron no arriesgarse.
     
     —Vámonos, Henry.
     Ya volveremos a por el libro —dijo Jack.
     
     Los hombres huyeron.
     Emma cayó de rodillas, exhausta por el esfuerzo de contener su poder. Miró a su salvador.
-    —Mis hombres te han estado vigilando... Y no han sido los únicos —dijo Balthassar—.
-    Trece años y ya tienes a organizaciones peligrosas detrás de ti, niña.
+    —Mis hombres te han estado vigilando... Y no han sido los únicos. Trece años y ya tienes a organizaciones peligrosas detrás de ti, niña.
     
     —¿Quién... eres?
-    —Me recuerdas a alguien... Tienes dos opciones, Emma Bianchi. Aceptas unirte a mí, o lidias tú sola con todo esto.
+    —Me recuerdas a alguien... Tienes dos opciones, Emma Bianchi. Aceptas unirte a mí, o lidias tú sola con todo esto. 
     Y te digo por experiencia propia que es imposible. Te cazarán antes de que salga el sol.
     
     —¿Unirme a ti?
     —Ese libro que escondes... está incompleto. Es el fracaso de alguien que no pudo mantener la cordura el tiempo suficiente.
     Me pregunto si tú serás capaz de acabarlo.
     
-    Balthassar se agachó para mirarla a los ojos.
+    El caballero se agachó para mirarla a los ojos.
     —Estoy deseando observar tus avances. Serás un bonito experimento. Mañana regresaré a la misma hora. Escucharé tu respuesta.
-    Si vienes, te daré el conocimiento para traerlos de vuelta... a cambio de tu humanidad.
-    Balthassar desapareció en la noche tan misteriosamente como había llegado. Emma se quedó sola en el salón destrozado.
+    Si vienes, te daré el conocimiento para que intentes traerlos de vuelta... 
+    Antes de salir por la puerta, añadió una última cosa:
+    —Y mi nombre es Balthassar... Recuerdalo.
+    Y sin mas desapareció en la noche tan misteriosamente como había llegado. Emma se quedó sola en el salón, pensando.
     ¿Vender su alma a un desconocido o morir a manos de los asesinos de sus padres?
     
-    Miró hacia el sótano.
-    Miró hacia las tumbas en el jardín. La respuesta estaba clara.
-    
-    —Lo haré. Recuperaré a mi familia.
-    No importa el precio.
+    Miró hacia el sótano y hacia las tumbas en el jardín. La respuesta estaba clara.
+
+    —Lo haré. Recuperaré a mi familia. No importa el precio.
     -> final_verdadero
 
 // ==========================================
@@ -865,9 +914,8 @@ La tentación era física; le quemaba en las yemas de los dedos, prometiendo imp
 Pero entonces, miró hacia la habitación vacía de Lorenzo. Recordó su último aliento, no como un quejido de dolor, sino como un acto de amor supremo.
 "No dejes que esto te consuma. Vive por nosotros."
 
-Si los traía de vuelta como cáscaras vacías, como ese pájaro que se arrastraba en el parque, estaría escupiendo sobre el sacrificio de su hermano.
-Emma cerró el libro con un golpe seco. Esa noche, la magia no fluyó.
-Solo las lágrimas, puras y humanas, que había estado conteniendo durante demasiado tiempo.
+Si los traía de vuelta, ¿como sabia que serian como antes?, como ese pájaro que se arrastraba en el parque, quizas solo serian cascarones vacios. Estaría escupiendo sobre el sacrificio de su hermano.
+Emma cerró el libro con un golpe seco. Esa noche, la magia no fluyó. Solo las lágrimas, puras y humanas, que había estado conteniendo durante demasiado tiempo.
 // --- Transición ---
 
 Emma abandonó su casa en Caliardo poco después.
@@ -894,10 +942,10 @@ Miró al cielo.
 Y pienso disfrutar de cada rayo de luz, tal y como tú me enseñaste.
 Emma no se convirtió en una leyenda oscura. Nadie escribió canciones sobre ella.
 Cada día, al levantarse y elegir la bondad sobre el rencor, Emma derrotaba a la oscuridad que intentó consumirla.
-Eligió la batalla más difícil de todas: ser feliz en un mundo roto.
+Eligió la batalla más difícil de todas: superar su dolor y ser feliz.
 
 —Vamos, niños. Es hora de entrar.
-Y así, la "pequeña luz" de los Bianchi siguió brillando, no con el fuego de la magia, sino con la calidez de una vida vivida con valentía.
+Y así, la "pequeña luz" de los Bianchi siguió brillando, no con el fuego de la magia, sino con la calidez de los niños a los que cuidaba.
 -> END
 
 === final_malo ===
@@ -916,13 +964,10 @@ Ese silencio que tanto había odiado durante el último año ahora regresaba par
 La vista se empezó a nublar.
 Las sombras del salón parecían alargarse, esperando pacientemente a que su luz se apagara.
 "Lorenzo...", pensó, sintiendo cómo las lágrimas le quemaban las mejillas frías. "Lo siento... No podré cumplir... mi promesa.".
-Buscó en su pecho, con dedos torpes, el colgante de piedra que le dio su hermano.
-Quería aferrarse a el una ultima vez, pero sus manos ya no respondían.
 Se quedó allí, tendida en el suelo del hogar que antaño le trajo tanta felicidad.
 Emma cerró los ojos una ultima vez, esperando ver el rostro de su familia.
 Pero en la soledad de esa muerte, solo encontró miedo y el eco de una promesa rota desvaneciéndose en el vacío.
 En el fondo, sabia que ni siquiera podria verlos en el mas alla... Los monstruos no van al cielo.
-GAME OVER
 -> END
 
 === final_verdadero ===
