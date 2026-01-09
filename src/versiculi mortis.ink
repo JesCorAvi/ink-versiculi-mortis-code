@@ -894,7 +894,7 @@ Se ha hecho uso del template [Remy-vim's Ink Template](remy-vim.itch.io/ink-temp
 { inventario ? colgante_lorenzo:
     > __Colgante de Piedra__
     Una piedra de río lisa con un símbolo tosco grabado.
-    El último regalo de Lorenzo. 
+    Un regalo de Lorenzo. 
     <i>"Para que los monstruos sepan que eres la hermana de Lorenzo".</i>
 }
 
