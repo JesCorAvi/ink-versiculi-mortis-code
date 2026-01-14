@@ -275,23 +275,23 @@ class NavigationManager {
 
             // Create a temporary confirmation modal
             const confirmModal = new BaseModal({
-              title: "Restart Story",
+              title: "Reiniciar historia",
               className: "confirm-modal",
               maxWidth: "400px",
               showFooter: true,
             });
 
             confirmModal.showConfirmation(
-              "Are you sure you want to restart the story from the beginning? Any unsaved progress will be lost.",
+              "¿Estas seguro de que quieres reiniciar la historia desde el principio? Cualquier progreso no guardado se perderá.",
               () => {
                 // On confirm
                 this.storyManager.restart();
               },
               null, // No cancel callback needed
               {
-                title: "Restart Story",
-                confirmText: "Restart",
-                cancelText: "Cancel",
+                title: "Reiniciar historia",
+                confirmText: "Reiniciar",
+                cancelText: "Cancelar",
                 confirmVariant: "primary", // Blue button instead of red
               },
             );
@@ -331,23 +331,23 @@ class NavigationManager {
     this.setupButton("rewind", () => {
       // Create a temporary confirmation modal
       const confirmModal = new BaseModal({
-        title: "Restart Story",
+        title: "Reinciar historia",
         className: "confirm-modal",
         maxWidth: "400px",
         showFooter: true,
       });
 
       confirmModal.showConfirmation(
-        "Are you sure you want to restart the story from the beginning? Any unsaved progress will be lost.",
+        "¿Estas seguro de que quieres reiniciar la historia desde el principio? Cualquier progreso no guardado se perderá.",
         () => {
           // On confirm
           this.storyManager.restart();
         },
         null, // No cancel callback needed
         {
-          title: "Restart Story",
-          confirmText: "Restart",
-          cancelText: "Cancel",
+          title: "Reiniciar historia",
+          confirmText: "Reiniciar",
+          cancelText: "Cancelar",
           confirmVariant: "primary",
         },
       );

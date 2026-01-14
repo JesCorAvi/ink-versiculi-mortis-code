@@ -33,12 +33,12 @@ class SaveSystem {
     try {
       // Validate input
       if (typeof slotNumber !== "number" || slotNumber < 0) {
-        throw new Error(`Invalid slot number: ${slotNumber}`);
+        throw new Error(`hueco invalido: ${slotNumber}`);
       }
 
       // Check localStorage availability
       if (!this.isStorageAvailable()) {
-        throw new Error("localStorage not available");
+        throw new Error("localStorage no esta disponible");
       }
 
       // Get game state
@@ -61,13 +61,13 @@ class SaveSystem {
       const slotName =
         slotNumber === this.autosaveSlot ? "Autosave" : `Slot ${slotNumber}`;
 
-      if (slotNumber != 0) this.showNotification(`Game saved to ${slotName}!`);
+      if (slotNumber != 0) this.showNotification(`Partida guardada en ${slotName}!`);
 
       // Refresh modal if open
       this.modal?.populateSaveSlots?.();
       return true;
     } catch (error) {
-      window.errorManager.error("Failed to save game", error, "save-system");
+      window.errorManager.error("Error al guardar partida", error, "save-system");
       return false;
     }
   }
@@ -82,12 +82,12 @@ class SaveSystem {
       if (!saveData) {
         const slotName =
           slotNumber === this.autosaveSlot ? "autosave" : "this slot";
-        throw new Error(`No save data found in ${slotName}`);
+        throw new Error(`No se encontro partida guardada en ${slotName}`);
       }
 
       // Validate save data
       if (!saveData.gameState) {
-        throw new Error("Save data is corrupted - missing game state");
+        throw new Error("Los datos de la partida guardada son inválidos");
       }
 
       // Try to load
@@ -95,11 +95,11 @@ class SaveSystem {
 
       const slotName =
         slotNumber === this.autosaveSlot ? "Autosave" : `Slot ${slotNumber}`;
-      this.showNotification(`Game loaded from ${slotName}!`);
+      this.showNotification(`Partida cargada desde ${slotName}!`);
       this.hideSaveDialog();
       return true;
     } catch (error) {
-      window.errorManager.error("Failed to load game", error, "save-system");
+      window.errorManager.error("Error al cargar partida", error, "save-system");
       return false;
     }
   }
@@ -134,8 +134,8 @@ class SaveSystem {
     try {
       const slotName = isAutosave ? "autosave" : `Slot ${slotNumber}`;
       const message = isAutosave
-        ? "Are you sure you want to clear the autosave?"
-        : `Are you sure you want to delete the save in Slot ${slotNumber}?`;
+        ? "¿Estas seguro de que quieres borrar el contenido del autosave?"
+        : `¿Estas seguro de que quieres borrar el contenido del Hueco ${slotNumber}?`;
 
       if (this.modal && this.modal.confirmModal) {
         this.modal.confirmModal.showConfirmation(
@@ -167,8 +167,8 @@ class SaveSystem {
           null, // No cancel callback needed
           {
             title: "Delete Save",
-            confirmText: "Delete",
-            cancelText: "Cancel",
+            confirmText: "Borrar",
+            cancelText: "Cancelar",
           },
         );
         return true;
@@ -294,8 +294,8 @@ class SaveSystem {
 
           const slotName =
             slotNumber === this.autosaveSlot
-              ? "Autosave"
-              : `Slot ${slotNumber}`;
+              ? "Auto-Guardado"
+              : `Hueco ${slotNumber}`;
           this.showNotification(`Save imported to ${slotName}!`);
 
           this.modal?.populateSaveSlots?.();

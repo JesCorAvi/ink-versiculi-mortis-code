@@ -25,7 +25,7 @@ class SavesModalManager {
 
   createModal() {
     this.modal = new BaseModal({
-      title: "Save & Load Game",
+      title: "Guardar/Cargar partida",
       className: "saves-modal",
       maxWidth: "600px",
       onShow: () => this.populateSaveSlots(),
@@ -33,7 +33,7 @@ class SavesModalManager {
   }
   createConfirmModal() {
     this.confirmModal = new BaseModal({
-      title: "Confirm",
+      title: "Confirmación",
       className: "confirm-modal",
       maxWidth: "400px",
       showFooter: true,
@@ -53,12 +53,12 @@ class SavesModalManager {
 
     const contentHTML = `
       <div class="saves-section">
-        <h3>Save Slots</h3>
+        <h3>Huecos de guardado</h3>
         <div class="save-slots-container">
           ${this.generateSaveSlotsHTML()}
         </div>
         <div class="import-export-info">
-          <strong>Tip:</strong> Use "Export" to save a slot to a file. Use "Import Here" on empty slots to load save files. Press Ctrl+S to quickly open this dialog.
+          <strong>Consejo:</strong> Usa los botones de exportar e importar para guardar tus partidas en archivos externos.
         </div>
       </div>
     `;
@@ -71,7 +71,7 @@ class SavesModalManager {
       footer.innerHTML = "";
       footer.style.textAlign = "right";
 
-      const closeBtn = this.modal.createButton("Close", {
+      const closeBtn = this.modal.createButton("Cerrar", {
         variant: "primary",
         onClick: () => this.hide(),
       });
@@ -121,10 +121,10 @@ class SavesModalManager {
   }
 
   createEmptySlotHTML(slotNumber, isAutosave) {
-    const slotName = isAutosave ? "Autosave" : `Slot ${slotNumber}`;
-    const emptyText = isAutosave ? "No autosave available" : "Empty";
+    const slotName = isAutosave ? "Auto-Guardado" : `Hueco ${slotNumber}`;
+    const emptyText = isAutosave ? "No hay partida guardada" : "Hueco vacío";
     const helpText = isAutosave
-      ? "Game will autosave after choices when enabled in settings"
+      ? "El juego guarda automáticamente aquí en ciertos puntos."
       : "";
 
     return `
@@ -135,15 +135,15 @@ class SavesModalManager {
           ${helpText ? `<div class="save-slot-detail">${helpText}</div>` : ""}
         </div>
         <div class="save-slot-actions">
-          ${!isAutosave ? this.createActionButton("Save Here", "save-to-slot", "primary") : ""}
-          ${!isAutosave ? this.createActionButton("Import Here", "import-to-slot", "secondary") : ""}
+          ${!isAutosave ? this.createActionButton("Guardar aqui", "save-to-slot", "primary") : ""}
+          ${!isAutosave ? this.createActionButton("Importar aqui", "import-to-slot", "secondary") : ""}
         </div>
       </div>
     `;
   }
 
   createFilledSlotHTML(slotNumber, saveData, isAutosave) {
-    const slotName = isAutosave ? "Autosave" : `Slot ${slotNumber}`;
+    const slotName = isAutosave ? "Auto-guardado" : `Hueco ${slotNumber}`;
     const timestamp = new Date(saveData.timestamp).toLocaleString();
 
     return `
@@ -163,10 +163,10 @@ class SavesModalManager {
           }
         </div>
         <div class="save-slot-actions">
-          ${this.createActionButton("Load", "load-from-slot", "secondary")}
-          ${this.createActionButton("Export", "export-from-slot", "primary")}
-          ${!isAutosave ? this.createActionButton("Overwrite", "overwrite-slot", "warning") : ""}
-          ${this.createActionButton(isAutosave ? "Clear" : "Delete", "delete-slot", "danger")}
+          ${this.createActionButton("Cargar", "load-from-slot", "secondary")}
+          ${this.createActionButton("Exportar", "export-from-slot", "primary")}
+          ${!isAutosave ? this.createActionButton("Sobrescribir", "overwrite-slot", "warning") : ""}
+          ${this.createActionButton(isAutosave ? "Limpiar" : "Borrar", "delete-slot", "danger")}
         </div>
       </div>
     `;

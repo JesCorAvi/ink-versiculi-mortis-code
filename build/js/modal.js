@@ -321,9 +321,9 @@ class BaseModal {
    */
   showConfirmation(message, onConfirm, onCancel, options = {}) {
     const defaults = {
-      title: "Confirm",
-      confirmText: "Yes",
-      cancelText: "Cancel",
+      title: "Comfirmación",
+      confirmText: "Si",
+      cancelText: "Cancelar",
       confirmVariant: "danger",
     };
 
