@@ -146,13 +146,13 @@ class ChoiceManager {
         null,
         "choice-manager",
       );
-      return this.createSpecialChoice("← Return to Story", () => {}, [
+      return this.createSpecialChoice("← Volver a la historia", () => {}, [
         "return-button",
         "error-choice",
       ]);
     }
 
-    return this.createSpecialChoice("← Return to Story", onReturn, [
+    return this.createSpecialChoice("← Volver a la historia", onReturn, [
       "return-button",
     ]);
   }
