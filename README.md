@@ -1,3 +1,5 @@
+Aquí tienes una propuesta de `README.md` para tu proyecto. He incluido la sinopsis de la historia, las características del juego (incluyendo el sistema de inventario y los finales que programaste en Ink) y las instrucciones de desarrollo extraídas de tu `Taskfile.yml`.
+
 # Versiculi Mortis
 
 **[👉 Juega a Versiculi Mortis aquí](https://jescoravi.github.io/versiculi-mortis/)**
@@ -18,3 +20,12 @@ La historia sigue a Emma Bianchi, una niña prodigio cuya vida pacífica en Cali
   - Interfaz adaptable a dispositivos móviles.
   - Opciones de accesibilidad (modos claro/oscuro y fuentes amigables para la dislexia).
 
+
+## Créditos
+
+* **Historia y diseño**: Jesús Cordero Ávila (JesCorAvi).
+* **Plantilla Web**: Basado en el excelente [Ink Story Template](https://remy-vim.itch.io/ink-template) creado por RemyVim.
+
+```
+
+```
