@@ -18,15 +18,3 @@ La historia sigue a Emma Bianchi, una niña prodigio cuya vida pacífica en Cali
   - Interfaz adaptable a dispositivos móviles.
   - Opciones de accesibilidad (modos claro/oscuro y fuentes amigables para la dislexia).
 
-## Desarrollo Local
-
-Si deseas clonar el repositorio y modificar la historia, el proyecto utiliza [Task](https://taskfile.dev/) para facilitar la compilación y el despliegue.
-
-### Prerrequisitos
-Asegúrate de tener instalado `Task` en tu sistema.
-
-### Comandos Disponibles
-
-- **Configurar el entorno**: Descarga e instala el compilador `inklecate` y otras herramientas necesarias.
-  ```bash
-  task setup
