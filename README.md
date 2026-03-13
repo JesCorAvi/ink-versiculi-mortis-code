@@ -26,6 +26,3 @@ La historia sigue a Emma Bianchi, una niña prodigio cuya vida pacífica en Cali
 * **Historia y diseño**: Jesús Cordero Ávila (JesCorAvi).
 * **Plantilla Web**: Basado en el excelente [Ink Story Template](https://remy-vim.itch.io/ink-template) creado por RemyVim.
 
-```
-
-```
